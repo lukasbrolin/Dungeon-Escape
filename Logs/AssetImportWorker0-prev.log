@@ -1,0 +1,655 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.1083; Version 2004; 64bit' Language: 'en' Physical Memory: 32714 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files (x86)\Unity\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Lukas/OneDrive/Games/Platform Game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60681
+Successfully changed project path to: C:/Users/Lukas/OneDrive/Games/Platform Game
+C:/Users/Lukas/OneDrive/Games/Platform Game
+Using Asset Import Pipeline V2.
+Multiple plugins with the same name 'zlib64plastic' (found at 'Packages/com.unity.collab-proxy/Lib/Editor/PlasticSCM/zlib64Plastic.dll' and 'Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/zlib64Plastic.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Multiple plugins with the same name 'lz4x64plastic' (found at 'Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/lz4x64Plastic.dll' and 'Packages/com.unity.collab-proxy/Lib/Editor/PlasticSCM/lz4x64Plastic.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Multiple plugins with the same name 'boundedbiharmonicweightsmodule' (found at 'Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Editor/SkinningModule/Lib/x64/BoundedBiharmonicWeightsModule.dll' and 'Packages/com.unity.2d.animation/Editor/SkinningModule/Lib/x64/BoundedBiharmonicWeightsModule.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Refreshing native plugins compatible for Editor in 122.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path C:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Lukas/OneDrive/Games/Platform Game/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 Ti (ID=0x1b06)
+    Vendor:   
+    VRAM:     11127 MB
+    Driver:   27.21.14.6231
+Initialize mono
+Mono path[0] = 'C:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003501 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Multiple plugins with the same name 'zlib64plastic' (found at 'Packages/com.unity.collab-proxy/Lib/Editor/PlasticSCM/zlib64Plastic.dll' and 'Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/zlib64Plastic.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Multiple plugins with the same name 'lz4x64plastic' (found at 'Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/lz4x64Plastic.dll' and 'Packages/com.unity.collab-proxy/Lib/Editor/PlasticSCM/lz4x64Plastic.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Multiple plugins with the same name 'boundedbiharmonicweightsmodule' (found at 'Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Editor/SkinningModule/Lib/x64/BoundedBiharmonicWeightsModule.dll' and 'Packages/com.unity.2d.animation/Editor/SkinningModule/Lib/x64/BoundedBiharmonicWeightsModule.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Refreshing native plugins compatible for Editor in 100.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.243 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.027247 seconds.
+Assembly with name 'UnityEditor.TestRunner' already exists (Assets/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+
+Assembly with name 'UnityEditor.TestRunner' already exists (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+
+Assembly with name 'Unity.InternalAPIEngineBridge.001' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Runtime/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.InternalAPIEngineBridge.001' already exists (Packages/com.unity.2d.common/Runtime/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.Mathematics.Tests' already exists (Assets/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Unity.Mathematics.Tests.asmdef)
+
+Assembly with name 'Unity.Mathematics.Tests' already exists (Packages/com.unity.mathematics/Tests/Unity.Mathematics.Tests.asmdef)
+
+Assembly with name 'Unity.CollabProxy.Editor' already exists (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+
+Assembly with name 'Unity.CollabProxy.Editor' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+
+Assembly with name 'Unity.Mathematics.Editor' already exists (Packages/com.unity.mathematics/Unity.Mathematics.Editor/Unity.Mathematics.Editor.asmdef)
+
+Assembly with name 'Unity.Mathematics.Editor' already exists (Assets/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/Unity.Mathematics.Editor.asmdef)
+
+Assembly with name 'DocCodeExamples' already exists (Assets/Library/PackageCache/com.unity.timeline@1.4.8/DocCodeExamples/DocCodeExamples.asmdef)
+
+Assembly with name 'DocCodeExamples' already exists (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+
+Assembly with name 'UnityEditor.UI.EditorTests' already exists (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+
+Assembly with name 'UnityEditor.UI.EditorTests' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor' already exists (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Common.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Editor/Unity.2D.Common.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Common.Editor' already exists (Packages/com.unity.2d.common/Editor/Unity.2D.Common.Editor.asmdef)
+
+Assembly with name 'Unity.2D.IK.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/IK/Editor/Unity.2D.IK.Editor.asmdef)
+
+Assembly with name 'Unity.2D.IK.Editor' already exists (Packages/com.unity.2d.animation/IK/Editor/Unity.2D.IK.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Common.EditorTests' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Tests/Editor/Unity.2D.Common.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Common.EditorTests' already exists (Packages/com.unity.2d.common/Tests/Editor/Unity.2D.Common.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Editor' already exists (Packages/com.unity.2d.animation/Editor/Unity.2D.Animation.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Editor/Unity.2D.Animation.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Triangle.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Runtime/Triangle/Unity.2D.Animation.Triangle.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Triangle.Runtime' already exists (Packages/com.unity.2d.animation/Runtime/Triangle/Unity.2D.Animation.Triangle.Runtime.asmdef)
+
+Assembly with name 'Unity.VisualStudio.Editor' already exists (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+
+Assembly with name 'Unity.VisualStudio.Editor' already exists (Assets/Library/PackageCache/com.unity.ide.visualstudio@2.0.8/Editor/com.unity.ide.visualstudio.asmdef)
+
+Assembly with name 'UnityEditor.UI' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UnityEditor.UI.asmdef)
+
+Assembly with name 'UnityEditor.UI' already exists (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+
+Assembly with name 'UnityEngine.TestRunner' already exists (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+
+Assembly with name 'UnityEngine.TestRunner' already exists (Assets/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+
+Assembly with name 'UnityEngine.UI.Tests' already exists (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+
+Assembly with name 'UnityEngine.UI.Tests' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor.Tests' already exists (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor.Tests' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+
+Assembly with name 'Unity.Timeline' already exists (Assets/Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Unity.Timeline.asmdef)
+
+Assembly with name 'Unity.Timeline' already exists (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Editor' already exists (Packages/com.unity.2d.sprite/Editor/Unity.2D.Sprite.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/Unity.2D.Sprite.Editor.asmdef)
+
+Assembly with name 'Unity.InternalAPIEditorBridge.001' already exists (Packages/com.unity.2d.common/Editor/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.InternalAPIEditorBridge.001' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Editor/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.2D.Animation.EditorTests' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Tests/Editor/Unity.2D.Animation.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Animation.EditorTests' already exists (Packages/com.unity.2d.animation/Tests/Editor/Unity.2D.Animation.EditorTests.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.Editor' already exists (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.Editor' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Package.EditorTests' already exists (Packages/com.unity.2d.sprite/Tests/Editor/Unity.2D.Sprite.Package.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Package.EditorTests' already exists (Assets/Library/PackageCache/com.unity.2d.sprite@1.0.0/Tests/Editor/Unity.2D.Sprite.Package.EditorTests.asmdef)
+
+Assembly with name 'Unity.Mathematics' already exists (Packages/com.unity.mathematics/Unity.Mathematics/Unity.Mathematics.asmdef)
+
+Assembly with name 'Unity.Mathematics' already exists (Assets/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Unity.Mathematics.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Tests' already exists (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Tests' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+
+Assembly with name 'Unity.2D.IK.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/IK/Runtime/Unity.2D.IK.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.IK.Runtime' already exists (Packages/com.unity.2d.animation/IK/Runtime/Unity.2D.IK.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Runtime' already exists (Packages/com.unity.2d.animation/Runtime/Unity.2D.Animation.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Runtime/Unity.2D.Animation.Runtime.asmdef)
+
+Assembly with name 'Unity.Rider.Editor' already exists (Assets/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/com.unity.ide.rider.asmdef)
+
+Assembly with name 'Unity.Rider.Editor' already exists (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+
+Assembly with name 'Unity.Timeline.Editor' already exists (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+
+Assembly with name 'Unity.Timeline.Editor' already exists (Assets/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Unity.Timeline.Editor.asmdef)
+
+Assembly with name 'Unity.CollabProxy.EditorTests' already exists (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+
+Assembly with name 'Unity.CollabProxy.EditorTests' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Common.Runtime' already exists (Packages/com.unity.2d.common/Runtime/Unity.2D.Common.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Common.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Runtime/Unity.2D.Common.Runtime.asmdef)
+
+Assembly with name 'Unity.Nuget.NewtonsoftJson.EditorTests' already exists (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+
+Assembly with name 'Unity.Nuget.NewtonsoftJson.EditorTests' already exists (Assets/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.EditorTests' already exists (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.EditorTests' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+
+Assembly with name 'Unity.VSCode.Editor' already exists (Assets/Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/Unity.com.unity.vscode.Editor.asmdef)
+
+Assembly with name 'Unity.VSCode.Editor' already exists (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+
+Assembly with name 'UnityEngine.UI' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UnityEngine.UI.asmdef)
+
+Assembly with name 'UnityEngine.UI' already exists (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+
+Assembly with name 'Unity.TextMeshPro' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+
+Assembly with name 'Unity.TextMeshPro' already exists (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+
+Assembly with name 'UnityEditor.TestRunner' already exists (Assets/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+
+Assembly with name 'UnityEditor.TestRunner' already exists (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+
+Assembly with name 'Unity.InternalAPIEngineBridge.001' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Runtime/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.InternalAPIEngineBridge.001' already exists (Packages/com.unity.2d.common/Runtime/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.Mathematics.Tests' already exists (Assets/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Unity.Mathematics.Tests.asmdef)
+
+Assembly with name 'Unity.Mathematics.Tests' already exists (Packages/com.unity.mathematics/Tests/Unity.Mathematics.Tests.asmdef)
+
+Assembly with name 'Unity.CollabProxy.Editor' already exists (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+
+Assembly with name 'Unity.CollabProxy.Editor' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+
+Assembly with name 'Unity.Mathematics.Editor' already exists (Packages/com.unity.mathematics/Unity.Mathematics.Editor/Unity.Mathematics.Editor.asmdef)
+
+Assembly with name 'Unity.Mathematics.Editor' already exists (Assets/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/Unity.Mathematics.Editor.asmdef)
+
+Assembly with name 'DocCodeExamples' already exists (Assets/Library/PackageCache/com.unity.timeline@1.4.8/DocCodeExamples/DocCodeExamples.asmdef)
+
+Assembly with name 'DocCodeExamples' already exists (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+
+Assembly with name 'UnityEditor.UI.EditorTests' already exists (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+
+Assembly with name 'UnityEditor.UI.EditorTests' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor' already exists (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Common.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Editor/Unity.2D.Common.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Common.Editor' already exists (Packages/com.unity.2d.common/Editor/Unity.2D.Common.Editor.asmdef)
+
+Assembly with name 'Unity.2D.IK.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/IK/Editor/Unity.2D.IK.Editor.asmdef)
+
+Assembly with name 'Unity.2D.IK.Editor' already exists (Packages/com.unity.2d.animation/IK/Editor/Unity.2D.IK.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Common.EditorTests' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Tests/Editor/Unity.2D.Common.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Common.EditorTests' already exists (Packages/com.unity.2d.common/Tests/Editor/Unity.2D.Common.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Editor' already exists (Packages/com.unity.2d.animation/Editor/Unity.2D.Animation.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Editor/Unity.2D.Animation.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Triangle.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Runtime/Triangle/Unity.2D.Animation.Triangle.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Triangle.Runtime' already exists (Packages/com.unity.2d.animation/Runtime/Triangle/Unity.2D.Animation.Triangle.Runtime.asmdef)
+
+Assembly with name 'Unity.VisualStudio.Editor' already exists (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+
+Assembly with name 'Unity.VisualStudio.Editor' already exists (Assets/Library/PackageCache/com.unity.ide.visualstudio@2.0.8/Editor/com.unity.ide.visualstudio.asmdef)
+
+Assembly with name 'UnityEditor.UI' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UnityEditor.UI.asmdef)
+
+Assembly with name 'UnityEditor.UI' already exists (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+
+Assembly with name 'UnityEngine.TestRunner' already exists (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+
+Assembly with name 'UnityEngine.TestRunner' already exists (Assets/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+
+Assembly with name 'UnityEngine.UI.Tests' already exists (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+
+Assembly with name 'UnityEngine.UI.Tests' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor.Tests' already exists (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor.Tests' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+
+Assembly with name 'Unity.Timeline' already exists (Assets/Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Unity.Timeline.asmdef)
+
+Assembly with name 'Unity.Timeline' already exists (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Editor' already exists (Packages/com.unity.2d.sprite/Editor/Unity.2D.Sprite.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/Unity.2D.Sprite.Editor.asmdef)
+
+Assembly with name 'Unity.InternalAPIEditorBridge.001' already exists (Packages/com.unity.2d.common/Editor/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.InternalAPIEditorBridge.001' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Editor/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.2D.Animation.EditorTests' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Tests/Editor/Unity.2D.Animation.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Animation.EditorTests' already exists (Packages/com.unity.2d.animation/Tests/Editor/Unity.2D.Animation.EditorTests.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.Editor' already exists (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.Editor' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Package.EditorTests' already exists (Packages/com.unity.2d.sprite/Tests/Editor/Unity.2D.Sprite.Package.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Package.EditorTests' already exists (Assets/Library/PackageCache/com.unity.2d.sprite@1.0.0/Tests/Editor/Unity.2D.Sprite.Package.EditorTests.asmdef)
+
+Assembly with name 'Unity.Mathematics' already exists (Packages/com.unity.mathematics/Unity.Mathematics/Unity.Mathematics.asmdef)
+
+Assembly with name 'Unity.Mathematics' already exists (Assets/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Unity.Mathematics.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Tests' already exists (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Tests' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+
+Assembly with name 'Unity.2D.IK.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/IK/Runtime/Unity.2D.IK.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.IK.Runtime' already exists (Packages/com.unity.2d.animation/IK/Runtime/Unity.2D.IK.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Runtime' already exists (Packages/com.unity.2d.animation/Runtime/Unity.2D.Animation.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Runtime/Unity.2D.Animation.Runtime.asmdef)
+
+Assembly with name 'Unity.Rider.Editor' already exists (Assets/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/com.unity.ide.rider.asmdef)
+
+Assembly with name 'Unity.Rider.Editor' already exists (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+
+Assembly with name 'Unity.Timeline.Editor' already exists (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+
+Assembly with name 'Unity.Timeline.Editor' already exists (Assets/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Unity.Timeline.Editor.asmdef)
+
+Assembly with name 'Unity.CollabProxy.EditorTests' already exists (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+
+Assembly with name 'Unity.CollabProxy.EditorTests' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Common.Runtime' already exists (Packages/com.unity.2d.common/Runtime/Unity.2D.Common.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Common.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Runtime/Unity.2D.Common.Runtime.asmdef)
+
+Assembly with name 'Unity.Nuget.NewtonsoftJson.EditorTests' already exists (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+
+Assembly with name 'Unity.Nuget.NewtonsoftJson.EditorTests' already exists (Assets/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.EditorTests' already exists (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.EditorTests' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+
+Assembly with name 'Unity.VSCode.Editor' already exists (Assets/Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/Unity.com.unity.vscode.Editor.asmdef)
+
+Assembly with name 'Unity.VSCode.Editor' already exists (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+
+Assembly with name 'UnityEngine.UI' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UnityEngine.UI.asmdef)
+
+Assembly with name 'UnityEngine.UI' already exists (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+
+Assembly with name 'Unity.TextMeshPro' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+
+Assembly with name 'Unity.TextMeshPro' already exists (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Multiple plugins with the same name 'zlib64plastic' (found at 'Packages/com.unity.collab-proxy/Lib/Editor/PlasticSCM/zlib64Plastic.dll' and 'Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/zlib64Plastic.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Multiple plugins with the same name 'lz4x64plastic' (found at 'Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/lz4x64Plastic.dll' and 'Packages/com.unity.collab-proxy/Lib/Editor/PlasticSCM/lz4x64Plastic.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Multiple plugins with the same name 'boundedbiharmonicweightsmodule' (found at 'Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Editor/SkinningModule/Lib/x64/BoundedBiharmonicWeightsModule.dll' and 'Packages/com.unity.2d.animation/Editor/SkinningModule/Lib/x64/BoundedBiharmonicWeightsModule.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Assembly with name 'UnityEditor.TestRunner' already exists (Assets/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+
+Assembly with name 'UnityEditor.TestRunner' already exists (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+
+Assembly with name 'Unity.InternalAPIEngineBridge.001' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Runtime/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.InternalAPIEngineBridge.001' already exists (Packages/com.unity.2d.common/Runtime/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.Mathematics.Tests' already exists (Assets/Library/PackageCache/com.unity.mathematics@1.1.0/Tests/Unity.Mathematics.Tests.asmdef)
+
+Assembly with name 'Unity.Mathematics.Tests' already exists (Packages/com.unity.mathematics/Tests/Unity.Mathematics.Tests.asmdef)
+
+Assembly with name 'Unity.CollabProxy.Editor' already exists (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+
+Assembly with name 'Unity.CollabProxy.Editor' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+
+Assembly with name 'Unity.Mathematics.Editor' already exists (Packages/com.unity.mathematics/Unity.Mathematics.Editor/Unity.Mathematics.Editor.asmdef)
+
+Assembly with name 'Unity.Mathematics.Editor' already exists (Assets/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics.Editor/Unity.Mathematics.Editor.asmdef)
+
+Assembly with name 'DocCodeExamples' already exists (Assets/Library/PackageCache/com.unity.timeline@1.4.8/DocCodeExamples/DocCodeExamples.asmdef)
+
+Assembly with name 'DocCodeExamples' already exists (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+
+Assembly with name 'UnityEditor.UI.EditorTests' already exists (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+
+Assembly with name 'UnityEditor.UI.EditorTests' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor' already exists (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Common.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Editor/Unity.2D.Common.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Common.Editor' already exists (Packages/com.unity.2d.common/Editor/Unity.2D.Common.Editor.asmdef)
+
+Assembly with name 'Unity.2D.IK.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/IK/Editor/Unity.2D.IK.Editor.asmdef)
+
+Assembly with name 'Unity.2D.IK.Editor' already exists (Packages/com.unity.2d.animation/IK/Editor/Unity.2D.IK.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Common.EditorTests' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Tests/Editor/Unity.2D.Common.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Common.EditorTests' already exists (Packages/com.unity.2d.common/Tests/Editor/Unity.2D.Common.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Editor' already exists (Packages/com.unity.2d.animation/Editor/Unity.2D.Animation.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Editor/Unity.2D.Animation.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Triangle.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Runtime/Triangle/Unity.2D.Animation.Triangle.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Triangle.Runtime' already exists (Packages/com.unity.2d.animation/Runtime/Triangle/Unity.2D.Animation.Triangle.Runtime.asmdef)
+
+Assembly with name 'Unity.VisualStudio.Editor' already exists (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+
+Assembly with name 'Unity.VisualStudio.Editor' already exists (Assets/Library/PackageCache/com.unity.ide.visualstudio@2.0.8/Editor/com.unity.ide.visualstudio.asmdef)
+
+Assembly with name 'UnityEditor.UI' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UnityEditor.UI.asmdef)
+
+Assembly with name 'UnityEditor.UI' already exists (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+
+Assembly with name 'UnityEngine.TestRunner' already exists (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+
+Assembly with name 'UnityEngine.TestRunner' already exists (Assets/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+
+Assembly with name 'UnityEngine.UI.Tests' already exists (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+
+Assembly with name 'UnityEngine.UI.Tests' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor.Tests' already exists (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Editor.Tests' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+
+Assembly with name 'Unity.Timeline' already exists (Assets/Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Unity.Timeline.asmdef)
+
+Assembly with name 'Unity.Timeline' already exists (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Editor' already exists (Packages/com.unity.2d.sprite/Editor/Unity.2D.Sprite.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Editor' already exists (Assets/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/Unity.2D.Sprite.Editor.asmdef)
+
+Assembly with name 'Unity.InternalAPIEditorBridge.001' already exists (Packages/com.unity.2d.common/Editor/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.InternalAPIEditorBridge.001' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Editor/InternalBridge/InternalBridgeDef.asmdef)
+
+Assembly with name 'Unity.2D.Animation.EditorTests' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Tests/Editor/Unity.2D.Animation.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Animation.EditorTests' already exists (Packages/com.unity.2d.animation/Tests/Editor/Unity.2D.Animation.EditorTests.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.Editor' already exists (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.Editor' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Package.EditorTests' already exists (Packages/com.unity.2d.sprite/Tests/Editor/Unity.2D.Sprite.Package.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Sprite.Package.EditorTests' already exists (Assets/Library/PackageCache/com.unity.2d.sprite@1.0.0/Tests/Editor/Unity.2D.Sprite.Package.EditorTests.asmdef)
+
+Assembly with name 'Unity.Mathematics' already exists (Packages/com.unity.mathematics/Unity.Mathematics/Unity.Mathematics.asmdef)
+
+Assembly with name 'Unity.Mathematics' already exists (Assets/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Unity.Mathematics.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Tests' already exists (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+
+Assembly with name 'Unity.TextMeshPro.Tests' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+
+Assembly with name 'Unity.2D.IK.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/IK/Runtime/Unity.2D.IK.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.IK.Runtime' already exists (Packages/com.unity.2d.animation/IK/Runtime/Unity.2D.IK.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Runtime' already exists (Packages/com.unity.2d.animation/Runtime/Unity.2D.Animation.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Animation.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Runtime/Unity.2D.Animation.Runtime.asmdef)
+
+Assembly with name 'Unity.Rider.Editor' already exists (Assets/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/com.unity.ide.rider.asmdef)
+
+Assembly with name 'Unity.Rider.Editor' already exists (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+
+Assembly with name 'Unity.Timeline.Editor' already exists (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+
+Assembly with name 'Unity.Timeline.Editor' already exists (Assets/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Unity.Timeline.Editor.asmdef)
+
+Assembly with name 'Unity.CollabProxy.EditorTests' already exists (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+
+Assembly with name 'Unity.CollabProxy.EditorTests' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+
+Assembly with name 'Unity.2D.Common.Runtime' already exists (Packages/com.unity.2d.common/Runtime/Unity.2D.Common.Runtime.asmdef)
+
+Assembly with name 'Unity.2D.Common.Runtime' already exists (Assets/Library/PackageCache/com.unity.2d.common@4.0.3/Runtime/Unity.2D.Common.Runtime.asmdef)
+
+Assembly with name 'Unity.Nuget.NewtonsoftJson.EditorTests' already exists (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+
+Assembly with name 'Unity.Nuget.NewtonsoftJson.EditorTests' already exists (Assets/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.EditorTests' already exists (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+
+Assembly with name 'Unity.PlasticSCM.EditorTests' already exists (Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+
+Assembly with name 'Unity.VSCode.Editor' already exists (Assets/Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/Unity.com.unity.vscode.Editor.asmdef)
+
+Assembly with name 'Unity.VSCode.Editor' already exists (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+
+Assembly with name 'UnityEngine.UI' already exists (Assets/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UnityEngine.UI.asmdef)
+
+Assembly with name 'UnityEngine.UI' already exists (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+
+Assembly with name 'Unity.TextMeshPro' already exists (Assets/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+
+Assembly with name 'Unity.TextMeshPro' already exists (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.239 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Multiple plugins with the same name 'zlib64plastic' (found at 'Packages/com.unity.collab-proxy/Lib/Editor/PlasticSCM/zlib64Plastic.dll' and 'Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/zlib64Plastic.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Multiple plugins with the same name 'lz4x64plastic' (found at 'Assets/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/lz4x64Plastic.dll' and 'Packages/com.unity.collab-proxy/Lib/Editor/PlasticSCM/lz4x64Plastic.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Multiple plugins with the same name 'boundedbiharmonicweightsmodule' (found at 'Assets/Library/PackageCache/com.unity.2d.animation@5.0.6/Editor/SkinningModule/Lib/x64/BoundedBiharmonicWeightsModule.dll' and 'Packages/com.unity.2d.animation/Editor/SkinningModule/Lib/x64/BoundedBiharmonicWeightsModule.dll'). That means one or more plugins are set to be compatible with Editor. Only one plugin at the time can be used by Editor.
+
+Refreshing native plugins compatible for Editor in 2.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3984 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.1 MB.
+System memory in use after: 159.8 MB.
+
+Unloading 486 unused Assets to reduce memory usage. Loaded Objects now: 4223.
+Total: 2.517100 ms (FindLiveObjects: 0.362000 ms CreateObjectMapping: 0.221000 ms MarkObjects: 1.649300 ms  DeleteObjects: 0.283000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Assets/_Scenes/Game.unity
+  artifactKey: Guid(8d609537b2ff94518b2aef8752cf8dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/_Scenes/Game.unity using Guid(8d609537b2ff94518b2aef8752cf8dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd8ed989f424350a04744aa3a74746a') in 0.011601 seconds 
+  Import took 0.017095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.109684 seconds.
+  path: Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef
+  artifactKey: Guid(2bafac87e7f4b9b418d9448d219b01ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef using Guid(2bafac87e7f4b9b418d9448d219b01ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13113e9364e6a0fa363eadb8296f871e') in 0.041014 seconds 
+  Import took 0.047272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004321 seconds.
+  path: Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef
+  artifactKey: Guid(2bafac87e7f4b9b418d9448d219b01ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef using Guid(2bafac87e7f4b9b418d9448d219b01ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13113e9364e6a0fa363eadb8296f871e') in 0.001958 seconds 
+  Import took 0.008445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.693634 seconds.
+  path: Packages/com.unity.2d.animation/package.json
+  artifactKey: Guid(9e83c20a8293f44ec8a375d3805f477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/package.json using Guid(9e83c20a8293f44ec8a375d3805f477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80f9374c172140cf66cd9f3ff83d7cfb') in 0.007761 seconds 
+  Import took 0.013722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.031129 seconds.
+  path: Packages/com.unity.2d.animation/IK
+  artifactKey: Guid(350d0a33d0eff469e827fca813d0a6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/IK using Guid(350d0a33d0eff469e827fca813d0a6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628f69b7dbb6ba196ba56472695eacc3') in 0.001842 seconds 
+  Import took 0.006777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.709490 seconds.
+  path: Packages/com.unity.2d.animation/IK/Runtime
+  artifactKey: Guid(5d0eac40fb3389c409c92e6e08188528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/IK/Runtime using Guid(5d0eac40fb3389c409c92e6e08188528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddcffdfaff4876251e429d48d38673f4') in 0.001895 seconds 
+  Import took 0.007940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.088097 seconds.
+  path: Packages/com.unity.2d.animation/IK/Runtime/Unity.2D.IK.Runtime.asmdef
+  artifactKey: Guid(88f14d179e7c91c4eac28302d69f32e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/IK/Runtime/Unity.2D.IK.Runtime.asmdef using Guid(88f14d179e7c91c4eac28302d69f32e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4407c0232826564431ab0bca53c84140') in 0.002342 seconds 
+  Import took 0.008056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.040400 seconds.
+  path: Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef
+  artifactKey: Guid(0acc523941302664db1f4e527237feb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef using Guid(0acc523941302664db1f4e527237feb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b436c5b272fbb9cad20717b7382829') in 0.002266 seconds 
+  Import took 0.009391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.082975 seconds.
+  path: Assets/Assets/_Scenes/0.unity
+  artifactKey: Guid(e60bcba5a66d81b43957ed9d1063c6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/_Scenes/0.unity using Guid(e60bcba5a66d81b43957ed9d1063c6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a75dc9de6c235e75452b2348afbc5c1') in 0.002583 seconds 
+  Import took 0.009181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 151.139909 seconds.
+  path: Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef
+  artifactKey: Guid(656e461844099ae43a609ff6109b0877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef using Guid(656e461844099ae43a609ff6109b0877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcffb8c55a96b9f12c1f51f36d51ea04') in 0.002292 seconds 
+  Import took 0.007352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.868441 seconds.
+  path: Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef
+  artifactKey: Guid(bb05cab7d802aa5468f8f2f86840d984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef using Guid(bb05cab7d802aa5468f8f2f86840d984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26e5d4825d514e60abcca3bbfb08672') in 0.002627 seconds 
+  Import took 0.010343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.506366 seconds.
+  path: Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef
+  artifactKey: Guid(6055be8ebefd69e48b49212b09b47b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef using Guid(6055be8ebefd69e48b49212b09b47b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57da3c51c8403b1a3ee981823296e79d') in 0.001929 seconds 
+  Import took 0.007762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.836564 seconds.
+  path: Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef
+  artifactKey: Guid(6546d7765b4165b40850b3667f981c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef using Guid(6546d7765b4165b40850b3667f981c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60394d5af40b20470b79c4c7bfd8efc') in 0.001996 seconds 
+  Import took 0.006982 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

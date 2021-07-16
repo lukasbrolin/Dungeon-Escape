@@ -11,25 +11,36 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float _jumpForce;
 
+    private bool _isGrounded = false;
     private PlayerAnimation _playerAnim;
-    private SpriteRenderer _spriteRend;
+    private SpriteRenderer[] _spriteRend;
 
     private bool _resetJump = false;
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _playerAnim = GetComponent<PlayerAnimation>();
-        _spriteRend = GetComponentInChildren<SpriteRenderer>();
+        _spriteRend = GetComponentsInChildren<SpriteRenderer>();
     }
 
     void Update()
     {
         Movement();
+        Attack();
+    }
+
+    void Attack()
+    {
+        if (Input.GetMouseButton(0) && isGrounded())
+        {
+            _playerAnim.Attack();
+        }
     }
 
     void Movement()
     {
         float move = Input.GetAxisRaw("Horizontal");
+        _isGrounded = isGrounded();
 
         FlipSprite(move);
 
@@ -47,11 +58,13 @@ public class Player : MonoBehaviour
     {
         if (move > 0)
         {
-            _spriteRend.flipX = false;
+            _spriteRend[0].flipX = false;
+            _spriteRend[1].flipY = false;
         }
         else if (move < 0)
         {
-            _spriteRend.flipX = true;
+            _spriteRend[0].flipX = true;
+            _spriteRend[1].flipY = true;
         }
     }
 
@@ -63,6 +76,7 @@ public class Player : MonoBehaviour
         {
             if (!_resetJump)
             {
+                _playerAnim.Jump(false);
                 return true;
             }
         }
