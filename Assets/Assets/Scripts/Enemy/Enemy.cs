@@ -12,10 +12,59 @@ public abstract class Enemy : MonoBehaviour
     protected int _gems;
     [SerializeField]
     protected Transform pointA, pointB;
-    public virtual void Attack()
-    {
 
+    protected Vector3 _currentTarget;
+    protected Animator _animator;
+    protected SpriteRenderer _spriteRenderer;
+    protected string _idleAnimation;
+
+    public virtual void Init()
+    {
+        _animator = GetComponentInChildren<Animator>();
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
-    public abstract void Update();
+    private void Start()
+    {
+        Init();
+    }
+
+    public virtual void Movement()
+    {
+        if (transform.position == pointA.position)
+        {
+            _animator.SetTrigger("Idle");
+            _currentTarget = pointB.position;
+        }
+        else if (transform.position == pointB.position)
+        {
+            _animator.SetTrigger("Idle");
+            _currentTarget = pointA.position;
+        }
+
+        transform.position = Vector3.MoveTowards(transform.position, _currentTarget, _speed * Time.deltaTime);
+    }
+
+    public virtual void CheckFacing()
+    {
+        if ((_currentTarget.x - transform.position.x < 0))
+        {
+            _spriteRenderer.flipX = true;
+        }
+        else
+        {
+            _spriteRenderer.flipX = false;
+        }
+    }
+
+    public virtual void Update()
+    {
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsName(_idleAnimation))
+        {
+            return;
+        }
+        CheckFacing();
+        Movement();
+    }
 }
+

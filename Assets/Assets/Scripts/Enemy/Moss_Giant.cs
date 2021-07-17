@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class Moss_Giant : Enemy
 {
-    // Start is called before the first frame update
-    private void Start()
-    {
-    }
 
-    // Update is called once per frame
-    public override void Update()
+    public override void Init()
     {
-        
+        base.Init();
+        _idleAnimation = "Giant_Idle";
     }
 }
