@@ -16,6 +16,17 @@ public class Player : MonoBehaviour
     private SpriteRenderer[] _spriteRend;
 
     private bool _resetJump = false;
+
+    public static Player player;
+
+    private void Awake()
+    {
+        if(player == null)
+        {
+            player = this;
+            Debug.Log(this);
+        }
+    }
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();

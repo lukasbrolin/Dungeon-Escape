@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour, IDamagable
 {
     [SerializeField]
     protected int _health;
     [SerializeField]
-    protected int _speed;
+    protected float _speed;
     [SerializeField]
     protected int _gems;
     [SerializeField]
@@ -17,6 +17,8 @@ public abstract class Enemy : MonoBehaviour
     protected Animator _animator;
     protected SpriteRenderer _spriteRenderer;
     protected string _idleAnimation;
+
+    protected bool isHit = false;
 
     public virtual void Init()
     {
@@ -42,7 +44,18 @@ public abstract class Enemy : MonoBehaviour
             _currentTarget = pointA.position;
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, _currentTarget, _speed * Time.deltaTime);
+        if (!isHit)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, _currentTarget, _speed * Time.deltaTime);
+        }
+
+        float distance = Mathf.Abs(transform.position.x - Player.player.transform.position.x);
+        
+        if(Mathf.Abs(distance) > 2f)
+        {
+            isHit = false;
+            _animator.SetBool("InCombat", false);
+        }
     }
 
     public virtual void CheckFacing()
@@ -65,6 +78,18 @@ public abstract class Enemy : MonoBehaviour
         }
         CheckFacing();
         Movement();
+    }
+
+    public void Damage(int damageAmount)
+    {
+        _health -= damageAmount;
+        _animator.SetTrigger("Hit");
+        isHit = true;
+        _animator.SetBool("InCombat", true);
+        if (_health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
 
