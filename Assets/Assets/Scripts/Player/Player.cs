@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamagable
 {
     private Rigidbody2D _rb;
 
@@ -10,23 +11,18 @@ public class Player : MonoBehaviour
     private float _runSpeed;
     [SerializeField]
     private float _jumpForce;
+    [SerializeField]
+    private float _attackSpeed;
 
     private bool _isGrounded = false;
+    private bool _isAttacking = false;
     private PlayerAnimation _playerAnim;
     private SpriteRenderer[] _spriteRend;
 
     private bool _resetJump = false;
 
-    public static Player player;
+    public int Health { get; set; }
 
-    private void Awake()
-    {
-        if(player == null)
-        {
-            player = this;
-            Debug.Log(this);
-        }
-    }
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -42,20 +38,42 @@ public class Player : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetMouseButton(0) && isGrounded())
+        if (Input.GetMouseButton(0) && IsGrounded() && _isAttacking == false)
         {
+            TriggerAttacking();
             _playerAnim.Attack();
+            StartCoroutine(AttackTimer());
+        }
+    }
+
+    private IEnumerator AttackTimer()
+    {
+        yield return new WaitForSeconds(_attackSpeed);
+        Debug.Log("Timer");
+        _playerAnim.ResetAttack();
+        TriggerAttacking();
+    }
+
+    private void TriggerAttacking()
+    {
+        if(_isAttacking)
+        {
+            _isAttacking = false;
+        }
+        else if (!_isAttacking)
+        {
+            _isAttacking = true;
         }
     }
 
     void Movement()
     {
         float move = Input.GetAxisRaw("Horizontal");
-        _isGrounded = isGrounded();
+        _isGrounded = IsGrounded();
 
         FlipSprite(move);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
             _playerAnim.Jump(true);
@@ -79,7 +97,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    bool isGrounded()
+    bool IsGrounded()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, 1 << 8);
 
@@ -99,5 +117,10 @@ public class Player : MonoBehaviour
         _resetJump = true;
         yield return new WaitForSeconds(0.1f);
         _resetJump = false;
+    }
+
+    public void Damage(int damageAmount)
+    {
+        Debug.Log("Damage()");
     }
 }

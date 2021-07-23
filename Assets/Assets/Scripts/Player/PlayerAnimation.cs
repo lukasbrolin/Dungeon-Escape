@@ -23,8 +23,29 @@ public class PlayerAnimation : MonoBehaviour
 
     public void Attack()
     {
+        if (!_animator[0].GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+        {
+            Debug.Log("Im out");
+            _animator[0].SetTrigger("Attack");
+            _animator[1].SetTrigger("Sword_Attack");
+        }
+        /*else if (_animator[0].GetCurrentAnimatorStateInfo(0).IsName("Attack") && _animator[0].GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        {
+            Debug.Log("I'm in, whats my mission");
+            _animator[0].SetTrigger("Attack");
+            _animator[1].SetTrigger("Sword_Attack");
+            //_animator[0].ResetTrigger("Attack");
+            
+        }*/
+        Debug.Log(_animator[0].GetCurrentAnimatorStateInfo(0).IsName("Attack"));
+           
+    }
+
+    public void ResetAttack()
+    {
         _animator[0].SetTrigger("Attack");
-        _animator[1].ResetTrigger("Sword_Attack");
         _animator[1].SetTrigger("Sword_Attack");
+        //_animator[0].ResetTrigger("Attack");
+        Debug.Log("Resetting");
     }
 }

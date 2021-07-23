@@ -20,10 +20,13 @@ public abstract class Enemy : MonoBehaviour, IDamagable
 
     protected bool isHit = false;
 
+    protected Player player;
+
     public virtual void Init()
     {
         _animator = GetComponentInChildren<Animator>();
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     private void Start()
@@ -49,9 +52,9 @@ public abstract class Enemy : MonoBehaviour, IDamagable
             transform.position = Vector3.MoveTowards(transform.position, _currentTarget, _speed * Time.deltaTime);
         }
 
-        float distance = Mathf.Abs(transform.position.x - Player.player.transform.position.x);
+        float distance = Vector3.Distance(transform.localPosition, player.transform.localPosition);
         
-        if(Mathf.Abs(distance) > 2f)
+        if(distance > 2f)
         {
             isHit = false;
             _animator.SetBool("InCombat", false);
@@ -60,7 +63,7 @@ public abstract class Enemy : MonoBehaviour, IDamagable
 
     public virtual void CheckFacing()
     {
-        if ((_currentTarget.x - transform.position.x < 0))
+        if(_currentTarget.x - transform.position.x < 0)
         {
             _spriteRenderer.flipX = true;
         }
@@ -68,11 +71,21 @@ public abstract class Enemy : MonoBehaviour, IDamagable
         {
             _spriteRenderer.flipX = false;
         }
+        Vector3 direction = player.transform.localPosition - transform.localPosition;
+
+        if(direction.x > 0 && _animator.GetBool("InCombat"))
+        {
+            _spriteRenderer.flipX = false;
+        }
+        else if(direction.x < 0 && _animator.GetBool("InCombat"))
+        {
+            _spriteRenderer.flipX = true;
+        }
     }
 
     public virtual void Update()
     {
-        if (_animator.GetCurrentAnimatorStateInfo(0).IsName(_idleAnimation))
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsName(_idleAnimation) && !_animator.GetBool("InCombat"))
         {
             return;
         }
