@@ -48,4 +48,14 @@ public class PlayerAnimation : MonoBehaviour
         //_animator[0].ResetTrigger("Attack");
         Debug.Log("Resetting");
     }
+
+    public void Death()
+    {
+        _animator[0].Play("Death");
+    }
+
+    public void Hit()
+    {
+        _animator[0].SetTrigger("Hit");
+    }
 }

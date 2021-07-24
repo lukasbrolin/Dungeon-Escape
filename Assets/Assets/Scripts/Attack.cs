@@ -5,7 +5,7 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     [SerializeField]
-    private int damage;
+    private int _damage;
 
     private bool _canDamage = true;
 
@@ -17,7 +17,7 @@ public class Attack : MonoBehaviour
         {
             if (_canDamage)
             {
-                hit.Damage(damage);
+                hit.Damage(_damage);
                 _canDamage = false;
                 StartCoroutine(ResetCooldown());
             }

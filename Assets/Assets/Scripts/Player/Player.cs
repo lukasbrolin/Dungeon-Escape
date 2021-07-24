@@ -12,28 +12,47 @@ public class Player : MonoBehaviour, IDamagable
     [SerializeField]
     private float _jumpForce;
     [SerializeField]
+    private float _fallMultiplier;
+    [SerializeField]
+    private float _jumpMultiplier;
+    [SerializeField]
     private float _attackSpeed;
 
     private bool _isGrounded = false;
     private bool _isAttacking = false;
+    private bool _resetJump = false;
+    private bool _jumpReq = false;
+
     private PlayerAnimation _playerAnim;
     private SpriteRenderer[] _spriteRend;
-
-    private bool _resetJump = false;
+    private BoxCollider2D _boxCollider;
 
     public int Health { get; set; }
+    private int _diamonds;
 
     void Start()
     {
+        this.Health = 100;
         _rb = GetComponent<Rigidbody2D>();
         _playerAnim = GetComponent<PlayerAnimation>();
         _spriteRend = GetComponentsInChildren<SpriteRenderer>();
+        _boxCollider = GetComponent<BoxCollider2D>();
     }
 
     void Update()
     {
         Movement();
         Attack();
+    }
+
+    void FixedUpdate()
+    {
+        if (_jumpReq)
+        {
+            JumpForce();
+        }
+
+        JumpCheck();
     }
 
     void Attack()
@@ -75,7 +94,7 @@ public class Player : MonoBehaviour, IDamagable
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
-            _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
+            _jumpReq = true;
             _playerAnim.Jump(true);
             StartCoroutine(ResetJumpRoutine());
         }
@@ -83,15 +102,39 @@ public class Player : MonoBehaviour, IDamagable
         _playerAnim.Move(move);
     }
 
+    void JumpCheck()
+    {
+        if (_rb.velocity.y < 0)
+        {
+            _rb.gravityScale = _fallMultiplier;
+        }
+        else if (_rb.velocity.y > 0 && !Input.GetButton("Jump"))
+        {
+            _rb.gravityScale = _jumpMultiplier;
+        }
+        else
+        {
+            _rb.gravityScale = 1f;
+        }
+    }
+
+    void JumpForce()
+    {
+        _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+        _jumpReq = false;
+    }
+
     void FlipSprite(float move)
     {
         if (move > 0)
         {
+            _boxCollider.offset = new Vector2(-0.1f, _boxCollider.offset.y);
             _spriteRend[0].flipX = false;
             _spriteRend[1].flipY = false;
         }
         else if (move < 0)
         {
+            _boxCollider.offset = new Vector2(0.1f, _boxCollider.offset.y); 
             _spriteRend[0].flipX = true;
             _spriteRend[1].flipY = true;
         }
@@ -121,6 +164,21 @@ public class Player : MonoBehaviour, IDamagable
 
     public void Damage(int damageAmount)
     {
-        Debug.Log("Damage()");
+        Health -= damageAmount;
+        if (Health <= 0)
+        {
+            _playerAnim.Death();
+            Destroy(gameObject,2f);
+        }
+        else
+        {
+            _playerAnim.Hit();
+        }
     }
+
+    public void AddDiamonds(int amount)
+    {
+        _diamonds += amount;
+    }
+
 }

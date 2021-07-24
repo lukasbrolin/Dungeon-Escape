@@ -12,6 +12,10 @@ public abstract class Enemy : MonoBehaviour, IDamagable
     protected int _gems;
     [SerializeField]
     protected Transform pointA, pointB;
+    [SerializeField]
+    protected Diamond _diamondPrefab;
+    [SerializeField]
+    protected int _gemAmount;
 
     protected Vector3 _currentTarget;
     protected Animator _animator;
@@ -19,6 +23,7 @@ public abstract class Enemy : MonoBehaviour, IDamagable
     protected string _idleAnimation;
 
     protected bool isHit = false;
+    protected bool isDead = false;
 
     protected Player player;
 
@@ -85,7 +90,7 @@ public abstract class Enemy : MonoBehaviour, IDamagable
 
     public virtual void Update()
     {
-        if (_animator.GetCurrentAnimatorStateInfo(0).IsName(_idleAnimation) && !_animator.GetBool("InCombat"))
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsName(_idleAnimation) && !_animator.GetBool("InCombat") || isDead)
         {
             return;
         }
@@ -93,16 +98,29 @@ public abstract class Enemy : MonoBehaviour, IDamagable
         Movement();
     }
 
-    public void Damage(int damageAmount)
+    public virtual void Damage(int damageAmount)
     {
         _health -= damageAmount;
-        _animator.SetTrigger("Hit");
-        isHit = true;
-        _animator.SetBool("InCombat", true);
+        
         if (_health <= 0)
         {
-            Destroy(gameObject);
+            isDead = true;
+            _animator.Play("Death");
+            Destroy(gameObject,5f);
+            float diff = 0;
+            for(int i = 0; i < _gemAmount; i++)
+            {
+                Diamond diamond = Instantiate(_diamondPrefab, new Vector2(transform.position.x + diff, player.transform.position.y), Quaternion.identity);
+                diff += 0.2f;
+            }
         }
+        else
+        {
+            _animator.SetTrigger("Hit");
+            _animator.SetBool("InCombat", true);
+        }
+        isHit = true;
+
     }
 }
 
