@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Timers;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
+
 
 public class Player : MonoBehaviour, IDamagable
 {
@@ -16,10 +18,11 @@ public class Player : MonoBehaviour, IDamagable
     [SerializeField]
     private float _jumpMultiplier;
     [SerializeField]
-    private float _attackSpeed;
+    private float _attackRate;
 
+    private float nextAttackTime = 0f;
+    private float timerJump = 0f;
     private bool _isGrounded = false;
-    private bool _isAttacking = false;
     private bool _resetJump = false;
     private bool _jumpReq = false;
 
@@ -28,11 +31,11 @@ public class Player : MonoBehaviour, IDamagable
     private BoxCollider2D _boxCollider;
 
     public int Health { get; set; }
-    private int _diamonds;
+    public int diamonds;
 
     void Start()
     {
-        this.Health = 100;
+        this.Health = 4;
         _rb = GetComponent<Rigidbody2D>();
         _playerAnim = GetComponent<PlayerAnimation>();
         _spriteRend = GetComponentsInChildren<SpriteRenderer>();
@@ -57,32 +60,19 @@ public class Player : MonoBehaviour, IDamagable
 
     void Attack()
     {
-        if (Input.GetMouseButton(0) && IsGrounded() && _isAttacking == false)
+        if(Time.time >= nextAttackTime)
         {
-            TriggerAttacking();
-            _playerAnim.Attack();
-            StartCoroutine(AttackTimer());
-        }
-    }
 
-    private IEnumerator AttackTimer()
-    {
-        yield return new WaitForSeconds(_attackSpeed);
-        Debug.Log("Timer");
-        _playerAnim.ResetAttack();
-        TriggerAttacking();
-    }
+            if (Input.GetKeyDown(KeyCode.LeftControl) && IsGrounded())
+            {
+                Debug.Log(Time.time);
 
-    private void TriggerAttacking()
-    {
-        if(_isAttacking)
-        {
-            _isAttacking = false;
+                nextAttackTime = Time.time + 1f / _attackRate;
+                AudioManager.instance.Play("Player_Attack");
+                _playerAnim.Attack();
+            }
         }
-        else if (!_isAttacking)
-        {
-            _isAttacking = true;
-        }
+        
     }
 
     void Movement()
@@ -94,7 +84,9 @@ public class Player : MonoBehaviour, IDamagable
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
+            timerJump = Time.time + 0.6f;
             _jumpReq = true;
+            AudioManager.instance.Play("Player_Jump");
             _playerAnim.Jump(true);
             StartCoroutine(ResetJumpRoutine());
         }
@@ -108,9 +100,20 @@ public class Player : MonoBehaviour, IDamagable
         {
             _rb.gravityScale = _fallMultiplier;
         }
-        else if (_rb.velocity.y > 0 && !Input.GetButton("Jump"))
+        else if (_rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
         {
             _rb.gravityScale = _jumpMultiplier;
+        }
+        else if (Input.GetKey(KeyCode.Space) && GameManager.Instance.HasBootsOfFlight)
+        {
+            if (Time.time <= timerJump)
+            {
+                _rb.gravityScale = 0f;
+            }
+            else
+            {
+                _rb.gravityScale = 1f;
+            }
         }
         else
         {
@@ -164,21 +167,26 @@ public class Player : MonoBehaviour, IDamagable
 
     public void Damage(int damageAmount)
     {
+        UIManager.Instance.UpdateLives(Health);
         Health -= damageAmount;
         if (Health <= 0)
         {
+            AudioManager.instance.Play("Player_Death");
             _playerAnim.Death();
             Destroy(gameObject,2f);
         }
         else
         {
+            AudioManager.instance.Play("Player_Hit");
             _playerAnim.Hit();
         }
     }
 
     public void AddDiamonds(int amount)
     {
-        _diamonds += amount;
+        diamonds += amount;
+        AudioManager.instance.Play("Player_Pickup");
+        UIManager.Instance.UpdateGemCount(diamonds);
     }
 
 }

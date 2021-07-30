@@ -8,6 +8,7 @@ public class Skeleton : Enemy
     {
         base.Init();
         _idleAnimation = "Idle";
-
+        mobName = "Skeleton";
     }
+
 }

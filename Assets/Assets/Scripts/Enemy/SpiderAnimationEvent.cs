@@ -12,6 +12,8 @@ public class SpiderAnimationEvent : MonoBehaviour
     }
     public void Fire()
     {
+        AudioManager.instance.Play("Spider_Attack");
         _spider.Attack();
     }
+
 }

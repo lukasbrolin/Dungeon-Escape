@@ -9,6 +9,7 @@ public class Moss_Giant : Enemy
     {
         base.Init();
         _idleAnimation = "Giant_Idle";
+        mobName = "Giant";
 
     }
 }

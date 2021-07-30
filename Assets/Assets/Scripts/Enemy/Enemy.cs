@@ -24,6 +24,8 @@ public abstract class Enemy : MonoBehaviour, IDamagable
 
     protected bool isHit = false;
     protected bool isDead = false;
+    protected string mobName;
+    protected bool _inRange = false;
 
     protected Player player;
 
@@ -54,15 +56,43 @@ public abstract class Enemy : MonoBehaviour, IDamagable
 
         if (!isHit)
         {
+            _animator.SetTrigger("Moving");
             transform.position = Vector3.MoveTowards(transform.position, _currentTarget, _speed * Time.deltaTime);
         }
 
         float distance = Vector3.Distance(transform.localPosition, player.transform.localPosition);
         
-        if(distance > 2f)
+        if(distance > 1f && isHit)
         {
-            isHit = false;
-            _animator.SetBool("InCombat", false);
+            _inRange = false;
+            Debug.Log(player.transform.localPosition.y - transform.localPosition.y);
+            if(Mathf.Abs(player.transform.localPosition.y - transform.localPosition.y) > 0.5f)
+            {
+                isHit = false;
+                _animator.SetBool("InCombat", false);
+            }
+            else
+            {
+                _animator.SetTrigger("Moving");
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.transform.position.x, transform.position.y,0f), _speed * Time.deltaTime);
+            }
+        }
+        else if(distance < 1f && isHit)
+        {
+            _inRange = true;
+            _animator.SetTrigger("Idle");
+        }
+    }
+
+    public void IfInRange()
+    {
+        if (_inRange)
+        {
+            _animator.SetBool("InRange",true);
+        }
+        else if (!_inRange)
+        {
+            _animator.SetBool("InRange", false);
         }
     }
 
@@ -96,6 +126,7 @@ public abstract class Enemy : MonoBehaviour, IDamagable
         }
         CheckFacing();
         Movement();
+        IfInRange();
     }
 
     public virtual void Damage(int damageAmount)
@@ -105,6 +136,7 @@ public abstract class Enemy : MonoBehaviour, IDamagable
         if (_health <= 0)
         {
             isDead = true;
+            AudioManager.instance.Play(mobName + "_Death");
             _animator.Play("Death");
             Destroy(gameObject,5f);
             float diff = 0;
@@ -116,11 +148,16 @@ public abstract class Enemy : MonoBehaviour, IDamagable
         }
         else
         {
+            AudioManager.instance.Play(mobName + "_Hit");
             _animator.SetTrigger("Hit");
             _animator.SetBool("InCombat", true);
         }
         isHit = true;
 
+    }
+    public void PlayAttack()
+    {
+        AudioManager.instance.Play(mobName + "_Attack");
     }
 }
 

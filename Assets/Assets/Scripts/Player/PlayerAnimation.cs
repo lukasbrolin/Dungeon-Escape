@@ -23,12 +23,11 @@ public class PlayerAnimation : MonoBehaviour
 
     public void Attack()
     {
-        if (!_animator[0].GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-        {
-            Debug.Log("Im out");
+        /*if (!_animator[0].GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+        {*/
             _animator[0].SetTrigger("Attack");
             _animator[1].SetTrigger("Sword_Attack");
-        }
+        //}
         /*else if (_animator[0].GetCurrentAnimatorStateInfo(0).IsName("Attack") && _animator[0].GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
         {
             Debug.Log("I'm in, whats my mission");

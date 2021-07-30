@@ -13,6 +13,7 @@ public class Spider : Enemy
     {
         base.Init();
         _idleAnimation = "Idle";
+        mobName = "Spider";
     }
 
     public override void Movement()
